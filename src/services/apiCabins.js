@@ -12,7 +12,6 @@ export async function getCabins() {
 }
 
 export async function createCabin(newCabin) {
-  console.log(newCabin);
   const { data, error } = await supabase.from('cabins').insert([newCabin]);
 
   if (error) {
