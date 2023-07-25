@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-
+// Bubling phase : false , capturing: true
 export function useOutsideClick(handler, listenCapturing = true) {
   const ref = useRef();
 
